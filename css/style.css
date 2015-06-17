@@ -1,0 +1,208 @@
+body{
+	font-size: 16px;
+	line-height: 22px;
+	color:#283136;
+	font-weight: normal;
+	font-family: "Roboto";
+}
+h1{
+	font-size: 36px;
+	line-height: 36px;
+	color:#000000;
+	font-weight: normal;
+	font-family: "Roboto";
+}
+h2{
+	font-size:18px;
+	line-height: 30px;
+	color:#000000;
+	font-weight: normal;
+	font-family: "Roboto";
+	text-transform: uppercase;
+}
+h3{
+	font-size:16px;
+	line-height: 22px;
+	color:#283136;
+	font-weight: normal;
+	font-family: "Roboto";
+	text-transform: uppercase;
+}
+.partners img{
+	opacity: 0.2;
+}
+.partners img:hover{
+	opacity: 1;
+}
+
+
+.container{
+	margin:0 auto;
+	width:880px;
+}
+
+.logo{
+	float:left;
+	width: 320px;
+	margin-top: 27px;
+	outline: 2px solid red;
+
+}
+nav{
+	float:left;
+	width: 400px;
+	min-height: 73px;
+	outline: 2px solid red;
+
+}
+.user-block{
+	float: right;
+	width: 100px;
+	min-height: 73px;
+	outline: 2px solid red;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.slider{
+
+}
+.overflow{
+	width:880px;
+	overflow: hidden;
+	outline: 2px solid red;
+}
+
+.inner{
+	width:300%;
+	transition-duration:1.5s;
+}
+.slide{
+	width:880px;
+	float:left;
+}
+.content-slide{
+	width:480px;
+	float:left;
+}
+.slide img{
+	float:right;
+}
+#btn-1:checked ~ .inner{
+margin-left: 0;
+}
+#btn-2:checked ~ .inner{
+margin-left: -100%;
+}
+#btn-3:checked ~ .inner{
+margin-left: -200%;
+}
+.services{
+	margin-top:80px;
+	border-bottom: 2px solid #eeeeee;
+}
+.services-item{
+	float:left;
+	width:240px;
+	height:379px;
+	margin-right: 80px;
+	outline: 2px solid red;
+}
+.services-item:last-child{
+	float:right;
+	margin-right: 0;
+}
+.studio-left{
+	
+	width: 620px;
+	float:left;
+	outline: 2px solid red;
+}
+.studio-right{
+	float:right;
+	width: 240px;
+	margin-top: 59px;
+	outline: 2px solid red;
+}
+.studio{
+	height: 472px;
+	border-bottom: 2px solid #eeeeee;
+	outline: 2px solid red;
+}
+.partners{
+	height: 166px;
+	border-bottom: 2px solid #eeeeee;
+	line-height: 166px;
+	word-spacing: 120px;
+	padding-left: 12px;
+}
+.partners img{
+	display:inline-block;
+	vertical-align: middle;
+}
+.map{
+	margin-top:85px;
+	background-color: #e9e5dc;
+	background-image: url('img/map.jpg');
+	height: 516px;
+	padding-top: 1px;	
+}
+address{
+	width: 250px;
+	height:240px;
+	margin-top: 89px;
+	outline: 2px solid red;
+}
+.footer-social{
+	width: 320px;
+	float: left;
+	outline: 2px solid red;
+	min-height: 216px;
+}
+.discount{
+	float: right;
+	outline: 2px solid red;
+	min-height: 216px;
+}
+
+
+
+/*INNER*/
+
+.shop-title{
+	outline: 2px solid red;
+	font-size: 40px;
+	line-height: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	margin:0;
+	padding:74px 0 94px;
+
+}
+.catalog-column-left{
+	float: left;
+	width: 240px;
+	outline: 2px solid red;
+}
+.catalog-column-right{
+	float: right;
+	width:560px;
+	outline: 2px solid red;
+}
+.card-product{
+	float: left;
+	margin-bottom: 80px;
+	outline: 2px solid red;
+}
+.card-product:nth-child(even){
+	float: right;
+}
+.paginator{
+	float: left;
+	margin-left: 320px;
+	outline: 2px solid red;
+}
