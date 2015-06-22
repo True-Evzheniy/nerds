@@ -151,11 +151,15 @@ margin-left: -200%;
 	height: 516px;
 	padding-top: 1px;	
 }
+
+.map .container{
+	position: relative;
+}
 address{
 	width: 250px;
 	height:240px;
-	margin-top: 89px;
-	outline: 2px solid red;
+	position: absolute;
+	top:89px;
 }
 .footer-social{
 	width: 320px;
