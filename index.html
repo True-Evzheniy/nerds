@@ -4,19 +4,20 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-	<title></title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<title>Nerds</title>
 </head>
 <body>
+	<div class="header-bg">
 	<header class="main-header">
 		<div class="container clearfix">		
 			<div class="logo">
-				<img src="img/logo.png" width="139" height="56" alt="logo">
+				<a href="index.html"><img src="img/logo.png" width="139" height="56" alt="logo"></a>
 			</div>
-			<nav>
+			<nav class="main-menu">
 				<ul>
 					<li>
-						<a href=#>Студия</a>
+						<a class="active" href=#>Студия</a>
 					</li>
 					<li>
 						<a href=#>Клиенты</a>
@@ -36,21 +37,20 @@
 	</header>
 	
 	<section class="slider">
-		<div class="container clearfix">
-			<div class="slider-controls">
-				<label for="btn-1"></label>	
-				<label for="btn-2"></label>
-				<label for="btn-3"></label>
-			</div>
 			<div class="overflow">
 			<input type="radio" id="btn-1" name="toggle" checked>
 			<input type="radio" id="btn-2" name="toggle">
 			<input type="radio" id="btn-3" name="toggle">
+			<div class="slider-controls">
+				<label for="btn-1"></label>	
+				<label for="btn-2"></label>
+				<label for="btn-3"></label>
+			</div>	
 				<div class="inner">
 					<div class="slide">
 						<div class="content-slide">
 							<h1>Долго, дорого, скурпулезно.</h1>
-							<p>Математичееский выверенный дизайн для вашего сайта или мобильного приложения.</p>
+							<p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
 							<a class="btn" href="#">Узнать больше</a>
 						</div>
 						<img src="img/slider-1.png" width="338" height="231" alt="slide">
@@ -58,7 +58,7 @@
 					<div class="slide">
 						<div class="content-slide">
 							<h1>Любите ли вы математику, как любим ее мы?</h1>
-							<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возмоность все просчитать</p>
+							<p>Нашим дизайнерам мы удаляем нейроны, ответственные <br>за креатив, чтобы дать им возмоность все просчитать</p>
 							<a class="btn" href="#">Узнать больше</a>
 						</div>
 						<img src="img/slider-2.png" width="230" height="249" alt="slide"> 
@@ -66,15 +66,15 @@
 					<div class="slide">
 						<div class="content-slide">
 							<h1>Только наркотики, только хардкор!</h1>
-							<p>Все дизайнерские решения в нашей компании принимаются под воздействием сильных качественных галлюциногенов</p>
+							<p>Все дизайнерские решения в нашей компании принимаются только под воздействием сильных галлюциногенов</p>
 							<a class="btn" href="#">Узнать больше</a>
 						</div>
-						<img src="img/slider-3.png" width="333" height="319" alt="slide">
+						<img src="img/slider-3.png" width="333" height="310" alt="slide">
 					</div>
 				</div>
 			</div>
-		</div>	
 	</section>	
+	</div>
 	<div class="container clearfix">
 		<section class="services clearfix">
 			<div class="services-item">
