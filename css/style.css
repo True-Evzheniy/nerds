@@ -1,3 +1,68 @@
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'symbols-nerds';
+  src: url('../font/symbols-nerds.eot?27841936');
+  src: url('../font/symbols-nerds.eot?27841936#iefix') format('embedded-opentype'),
+       url('../font/symbols-nerds.woff?27841936') format('woff'),
+       url('../font/symbols-nerds.ttf?27841936') format('truetype'),
+       url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-nerds';
+    src: url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-nerds";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-basket:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-vk:before { content: '\76'; } /* 'v' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-circle:before { content: '\25cb'; } /* '○' */
+.icon-circle-dot:before { content: '\25cf'; } /* '●' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
 body{
 	font-size: 16px;
 	line-height: 22px;
@@ -48,7 +113,6 @@ h3{
 }
 .main-header{
 	margin-bottom: 43px;
-	outline: 2px dotted black;
 }
 .logo{
 	float:left;
@@ -101,10 +165,16 @@ h3{
 	text-transform: uppercase;
 	text-decoration: none;
 }
-.main-header a:hover{
-	color:#fb565a;
+.basket i{
+	margin-right: 2px;
+	color: #a6a6a6;
+
 }
-.main-header a:active{
+.main-header a:hover, .main-header a:hover i{
+	color:#fb565a;
+
+}
+.main-header a:active, .main-header a:active i{
 	color:#ababab;
 }
 .clearfix:after {
@@ -347,7 +417,18 @@ address .btn{
 .social-btn:active{
 	background-color: #d6494d;
 }
-
+.social-btn i{
+	display: block;
+	margin: 0;
+	font-size:25px;
+	color:#fff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 62px;
+}
+.discount h1{
+	margin-top:77px;
+}
 
 /*INNER*/
 
