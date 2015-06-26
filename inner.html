@@ -8,6 +8,7 @@
 	<title>Каталог</title>
 </head>
 <body>
+	<div class="header-bg">
 	<header class="main-header">
 		<div class="container clearfix">		
 			<div class="logo">
@@ -16,13 +17,13 @@
 			<nav class="main-menu">
 				<ul>
 					<li>
-						<a class="active" href=#>Студия</a>
+						<a href="index.html">Студия</a>
 					</li>
 					<li>
 						<a href=#>Клиенты</a>
 					</li>
 					<li>
-						<a href=#>Магазин</a>
+						<a class="active"href=#>Магазин</a>
 					</li>
 					<li>
 						<a href=#>Контакты</a>
@@ -30,23 +31,27 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<a class="basket" href=#>Корзина</a>
+				<a class="basket" href=#><i class="icon-basket"></i>Корзина</a>
 			</div>
 		</div>
 	</header>
-	<div>
-		<h1 class="shop-title">Добро пожаловать в магазин<br>готовых макетов</h1>
+			<h1 class="shop-title">Добро пожаловать в магазин<br>готовых макетов</h1>
 	</div>
 	<div class="container clearfix">
 		<section class="catalog-column-left">
 			<form action="echo/" method="post">
 				<h2>Стоимость:</h2>
-				<div class="range-controls">
-				</div>
-				<div class="price-controls">
-                	<p>от <input class="min-price" type="text" value="0">
-                	до <input class="max-price" type="text" value="15 000"></p>
-            	</div>
+				<div class="range-filter">
+            		<div class="range-controls">
+                		<div class="scale"><div style="margin-left:20px;width:100px;" class="bar"></div></div>
+                		<div class="toggle min-toggle"></div>
+                		<div class="toggle max-toggle"></div>
+            		</div>
+            		<div class="price-controls">
+                		<label class="min-price" >от <input name="min-price" type="text" value="5 000"></label>
+               			<label  class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+            		</div>
+       			 </div>
 				<h2>Сетка:</h2>
 				<ul>
 					<li>
@@ -70,7 +75,7 @@
 					</li>
 					<li>
 						<input type="checkbox" name="features" id="advantage">
-						<label for="advantage">Блок приемуществ</label>
+						<label for="advantage">Блок преимуществ</label>
 					</li>
 					<li>
 						<input type="checkbox" name="features" id="news" checked>
@@ -85,7 +90,7 @@
 						<label for="basket">Корзина</label>
 					</li>
 				</ul>
-				<input class="btn" type="submit" value="Показать">
+				<input class="btn btn-form" type="submit" value="Показать">
 			</form>	
 		</section>
 		<section class="catalog-column-right clearfix">
@@ -103,53 +108,71 @@
 					</li>
 				</ul>
 				<div class="query">
-					<a class="up" href=#></a>
-					<a class="down" href=#></a>
+					<a class="down active" href=#><i class="icon-down-dir"></i></a>
+					<a class="up" href=#><i class="icon-up-dir"></i></a>
 				</div>
 			</div>
 			<article class="card-product">
 				<div class="browser">
+					<div class="circle"></div>
+					<div class="circle"></div>
+					<div class="circle"></div>
 				</div>
 				<img src="img/gallery-aviator.jpg" width="240" height="240" alt="aviator">
 			</article>
 			<article class="card-product">
 				<div class="browser">
+					<div class="circle"></div>
+					<div class="circle"></div>
+					<div class="circle"></div>
 				</div>
 				<img src="img/gallery-beach.jpg" width="240" height="240" alt="beach">
 			</article>
 			<article class="card-product">
 				<div class="browser">
+					<div class="circle"></div>
+					<div class="circle"></div>
+					<div class="circle"></div>
 				</div>
 				<img src="img/gallery-forte.jpg" width="240" height="240" alt="forte">
 			</article>	
 			<article class="card-product">
 				<div class="browser">
+					<div class="circle"></div>
+					<div class="circle"></div>
+					<div class="circle"></div>
 				</div>
 				<img src="img/gallery-modern.jpg" width="240" height="240" alt="modern">
 			</article>
 			<article class="card-product">
 				<div class="browser">
+					<div class="circle"></div>
+					<div class="circle"></div>
+					<div class="circle"></div>
 				</div>
 				<img src="img/gallery-avenue.jpg" width="240" height="240" alt="avenue">
 			</article>
 			<article class="card-product">
 				<div class="browser">
+					<div class="circle"></div>
+					<div class="circle"></div>
+					<div class="circle"></div>
 				</div>
 				<img src="img/gallery-dovetail.jpg" width="240" height="240" alt="dovetail">
 			</article>
 		</section>
 		<ul class="paginator">
 			<li>
-				<a class="btn active" href=#>1</a>
+				<span class="btn-paginator active" href=#>1</span>
 			</li>
 			<li>
-				<a class="btn" href=#>2</a>
+				<a class="btn-paginator" href=#>2</a>
 			</li>
 			<li>
-				<a class="btn" href=#>3</a>
+				<a class="btn-paginator" href=#>3</a>
 			</li>
 			<li>
-				<a class="btn" href=#>Следующяя</a>
+				<a class="btn-paginator next" href=#>Следующяя</a>
 			</li>
 		</ul>
 	</div>
