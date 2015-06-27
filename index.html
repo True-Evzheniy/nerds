@@ -115,11 +115,12 @@
 					<li>Соблюдая сроки 100%</li>
 					<li>По предоплате 50%</li>
 				</ul>
+			</div>	
 		</section>
 		<section class="partners">
-			<a href=#><img src="img/partner-1.png" width="198" height="37"></a>
-			<a href=#><img src="img/partner-2.png" width="199" height="68"></a>
-			<a href=#><img src="img/partner-3.png" width="209" height="86"></a>
+			<a href=#><img src="img/partner-1.png" width="198" height="37" alt="GLUKHANKO"></a>
+			<a href=#><img src="img/partner-2.png" width="199" height="68" alt="HTML ACADEMY"></a>
+			<a href=#><img src="img/partner-3.png" width="209" height="86" alt="BORODINSKI"></a>
 		</section>
 	</div>
 	<section class="map">
@@ -148,5 +149,23 @@
 			</section>
 		</div>
 	</footer>
+	<div class="modal-content">
+		<div class="modal-content-close btn">закрыть</div>
+		<form class="email-form" method="post" action="/echo">
+		<div class="clearfix">
+		<label class="form-column-left">Ваше имя:<br>
+			<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+		</label>
+		<label class="form-column-right">Ваш e-mail:<br>
+			<input type="email" name="email" placeholder="Для отправки ответа">	
+		</label>
+		</div>
+		<label>Текст письма:<br>
+			<textarea name="emailinner" placeholder="В свободной форме"></textarea>
+		</label>
+		<button type="submit" class="btn form-column-left">Отправить</button>
+		<a href="#" class=" btn btn-form form-column-right">Отмена</a>
+		</form>
+	</div>	
 </body>
 </html>
