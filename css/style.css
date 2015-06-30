@@ -112,11 +112,15 @@ h3{
 	min-width: 880px
 }
 .main-header{
-	margin-bottom: 43px;
+	margin-bottom: 35px;
 }
 .logo{
 	float:left;
 	width: 140px;
+}
+.main-header a{
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 14px;
 }
 .main-menu{
 	float:left;
@@ -129,7 +133,7 @@ h3{
 }
 .logo a{
 	display: block;
-	padding-top:27px;
+	padding-top:26px;
 }
 .main-menu li{
 	display: inline-block;
@@ -144,7 +148,7 @@ h3{
 .main-menu a{
 	position: relative;
 	display: block;
-	padding:60px 20px 5px;
+	padding:58px 20px 5px;
 	color:#000;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -244,10 +248,10 @@ h3{
     line-height:1;
     font-weight:500;
     color:#000;
-    margin: 35px 0px 20px;
+    margin: 33px 0px 19px;
 }
 .slide p{
-	margin-bottom:20;
+	margin-bottom:21px;
 	padding: 0
 }
 .slide .btn{
@@ -267,8 +271,8 @@ margin-left: -200%;
 }
 .btn{
     display:block;
-    padding:10px 0;
-    margin-top:30px;
+    padding:9px 0;
+    margin-top:25px;
     font-size:12px;
     color:#fff;
     text-transform:uppercase;
@@ -294,7 +298,9 @@ margin-left: -200%;
 	width:240px;
 	height:379px;
 	margin-right: 80px;
-	
+}
+.services-item h2{
+	margin-top: 17px;
 }
 .services-item .btn{
 	width: 140px;
@@ -323,50 +329,56 @@ margin-left: -200%;
 	background: #c09b24;
 	box-shadow:inset 0 3px 0 0 #a3841f;
 }
-
-
-
-
 /*STUDIO*/
 .studio-left{
 	width: 620px;
 	float:left;
-	
 }
 .studio h1{
-	margin-top: 70px;
+	font-size: 36px;
+	margin-top: 71px;
+	margin-bottom: 0;
 }
 .studio-right{
 	float:right;
 	width: 240px;
 	margin-top: 59px;
 }
-.studio-right img{
-margin-bottom:62px;	
-}
 .studio{
 	min-height: 472px;
 	border-bottom: 2px solid #eeeeee;
 }
 .studio p{
-	margin-bottom: 50px;
+	margin-top: 18px;
+	margin-bottom: 28px;
+}
+.studio h3{
+	margin-bottom: 22px;
+}
+.studio-column-left{
+	float:left;
+}
+.studio-column-right{
+	float:right;
+	width: 240px;
 }
 .studio ul{
 list-style: none;
 margin:0;
 padding: 0;
 }
-.studio li{
-padding-left:36px;
-margin-bottom:26px;
+.studio-list li{
+	position: relative;
+	padding-left:36px;
+	margin-bottom:22px;
 }
 .studio li:before{
 	content: "";
-	position: relative;
+	position: absolute;
 	display: block;
 	width:26px;
 	top:10px;
-	left:-36px;
+	left:0px;
 	border-bottom: 2px solid #fb565a;
 }
 /*PARTNERS*/
@@ -376,6 +388,8 @@ margin-bottom:26px;
 	line-height: 166px;
 	word-spacing: 120px;
 	padding-left: 12px;
+	margin-bottom: 5px;
+	
 }
 .partners img{
 	display:inline-block;
@@ -384,21 +398,24 @@ margin-bottom:26px;
 
 /*MAP*/
 .map{
-	margin-top:85px;
+	margin-top:80px;
 	background:#e9e5dc url('../img/map.jpg') no-repeat center;
-	height: 516px;
+	height: 416px;
 }
 .map .container{
 	position: relative;
 }
 address{
+	position: absolute;
 	width: 230px;
 	height:240px;
-	position: absolute;
 	padding-left: 20px;
 	top:89px;
 	background-color:#fff;
 	font-style: normal;
+}
+address h3{
+	margin-top:29px;
 }
 address .btn{
 	position: absolute;
@@ -416,7 +433,7 @@ address .btn{
 	min-height: 216px;
 }
 .discount{
-	float: right;
+	float: left;
 	min-height: 216px;
 }
 .social-btn{
@@ -446,7 +463,12 @@ address .btn{
 	line-height: 62px;
 }
 .discount h1{
+	font-size: 36px;
 	margin-top:77px;
+	margin-bottom: 0px;
+}
+.discount p{
+	margin-top: 10px;
 }
 
 /*INNER*/
@@ -456,8 +478,8 @@ address .btn{
 	line-height: 48px;
 	text-transform: uppercase;
 	text-align: center;
-	padding:27px 0 80px;
-	margin-bottom: 80px;
+	padding:24px 0 82px;
+	margin-bottom: 77px;
 }
 .catalog-column-left{
 	float: left;
@@ -522,6 +544,7 @@ address .btn{
 	height: 32px;
 	padding:0;
 	margin-bottom: 50px;
+	text-transform: uppercase;
 }
 .price-controls .min-price{
 	position: absolute;    
@@ -540,9 +563,43 @@ address .btn{
 	width:560px;
 }
 .card-product{
+	position: relative;
 	float: left;
-	margin-bottom: 80px;
+	margin-bottom: 75px;
 	width: 240px;
+}
+.card-inner{
+	position: absolute;
+	display:none;
+	top: 50px;
+	right: 20px;
+	width: 140px;
+	min-height: 110px;
+	padding: 35px 30px 55px;
+	text-align: center;
+	background: #fff;
+}
+.card-inner h2{
+	margin: 0;
+	padding: 0;
+	line-height: 18px;
+}
+.card-inner p{
+	margin-top: 20 px;
+	font-size: 14px;
+	line-height: 18px;
+}
+.card-inner a{
+	position: absolute;
+	bottom:30px;
+	left:30px;
+	right:30px;
+}
+.card-product:hover .browser{
+	background: #797979;
+}
+.card-product:hover .card-inner{
+	display: block;
 }
 .card-product:nth-child(even){
 	float: right;
@@ -570,14 +627,14 @@ address .btn{
 	list-style: none;
 	margin:0;
 	padding:0;
-	margin-bottom: 55px;
+	margin-bottom: 45px;
 }
 .catalog-column-left li{
-	margin-bottom:25px;
+	margin-bottom:20px;
 }
 .catalog-column-left label{
-	display: block;
 	position: relative;
+	display: block;
 	margin-left: 35px;
 	vertical-align: middle;
 	color: #283136;
@@ -596,8 +653,8 @@ address .btn{
 }
 .catalog-column-left input[type="radio"]+label:before{
 	content: '\25cb';
-	display: block;
 	position: absolute;
+	display: block;
 	left:-35px;
 	vertical-align: middle;
 	color: #c1c1c1;
@@ -607,8 +664,8 @@ address .btn{
 }
 .catalog-column-left input[type="radio"]:checked+label:before{
 	content: '\25cf';
-	display: block;
 	position: absolute;
+	display: block;
 	left:-35px;
 	vertical-align: middle;
 	font-family: symbols-nerds;
@@ -617,8 +674,8 @@ address .btn{
 }
 .catalog-column-left input[type="checkbox"]+label:before{
 	content: '\2610';
-	display: block;
 	position: absolute;
+	display: block;
 	left:-35px;
 	vertical-align: middle;
 	color: #c1c1c1;
@@ -628,14 +685,21 @@ address .btn{
 }
 .catalog-column-left input[type="checkbox"]:checked+label:before{
 	content: '\2611';
-	display: block;
 	position: absolute;
+	display: block;
 	left:-35px;
 	vertical-align: middle;
 	font-family: symbols-nerds;
 	font-size: 25px;
 	margin-right: 10px;
 	width:10px;
+}
+.catalog-column-left a{
+	text-decoration: none;
+}
+.catalog-column-left .btn-form{
+	width: 154px;
+	margin-top: 62px;
 }
 .btn-form{
 	padding:10px 33px;
@@ -677,6 +741,7 @@ address .btn{
 	vertical-align: middle;
 	border-radius: 2px;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 .next{
 	width: 140px;
@@ -700,7 +765,8 @@ a.btn-paginator:active{
 /*SORTED*/
 .sorted{
 	position: relative;
-	margin-bottom: 21px;
+	padding-top: 4px;
+	margin-bottom: 17px;
 	font-family: "Roboto",Arial,sans-serif;
 	font-size: 12px;
 	line-height: 18px;
@@ -761,17 +827,83 @@ a.btn-paginator:active{
 	opacity: 1;
 }
 .modal-content{
-	position: absolute;
+	position: fixed;
+	display: none;
 	top:0;
 	left:50%;
 	width: 630px;
-	margin-top:380px;
+	margin-top:100px;
 	margin-left:-315px;
 	padding: 55px 90px 50px 80px;
 	background: #fff;
 	box-sizing:border-box;
 	box-shadow: 0px 20px 40px 0px rgba(0,0,0,.75);
 }
+.modal-content-show{
+	display: block;
+	-webkit-animation: bounce 0.6s;
+	animation: bounce 0.6s;
+
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal-content-close{
 	position: absolute;
 	top:6px;
@@ -801,6 +933,16 @@ a.btn-paginator:active{
 	border:2px solid #d7dcde;
 	border-radius:3px;
 }
+.email-form input[type="text"]:hover,
+.email-form input[type="email"]:hover,
+.email-form textarea:hover{
+	border-color: #a2a9ac;
+}
+.email-form input[type="text"]:focus,
+.email-form input[type="email"]:focus,
+.email-form textarea:focus{
+	border-color: #56bffb;
+}
 .email-form textarea{
 	width: 460px;
 	height: 114px;
@@ -813,8 +955,7 @@ a.btn-paginator:active{
 	display: block;
 	float:right;
 }
-.email-form button[type="submit"],
-.email-form a{
+.email-form button{
 	width: 220px;
 	outline: none;
 	border:none;

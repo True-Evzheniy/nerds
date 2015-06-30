@@ -39,7 +39,7 @@
 	</div>
 	<div class="container clearfix">
 		<section class="catalog-column-left">
-			<form action="echo/" method="post">
+			<form action="/echo" method="post">
 				<h2>Стоимость:</h2>
 				<div class="range-filter">
             		<div class="range-controls">
@@ -48,7 +48,7 @@
                 		<div class="toggle max-toggle"></div>
             		</div>
             		<div class="price-controls">
-                		<label class="min-price" >от <input name="min-price" type="text" value="5 000"></label>
+                		<label class="min-price" >от <input name="min-price" type="text" value="0"></label>
                			<label  class="max-price">до <input name="max-price" type="text" value="15 000"></label>
             		</div>
        			 </div>
@@ -90,7 +90,7 @@
 						<label for="basket">Корзина</label>
 					</li>
 				</ul>
-				<input class="btn btn-form" type="submit" value="Показать">
+				<a class="filter-btn btn btn-form" href="#">Показать</a>
 			</form>	
 		</section>
 		<section class="catalog-column-right clearfix">
@@ -118,6 +118,11 @@
 					<div class="circle"></div>
 					<div class="circle"></div>
 				</div>
+				<div class="card-inner">
+					<h2>Sunset</h2>
+					<p>Интернет-магазин с личным кабинетом</p>
+					<a class="btn" href="#">10 000 р.</a>
+				</div>
 				<img src="img/gallery-aviator.jpg" width="240" height="240" alt="aviator">
 			</article>
 			<article class="card-product">
@@ -125,6 +130,11 @@
 					<div class="circle"></div>
 					<div class="circle"></div>
 					<div class="circle"></div>
+				</div>
+				<div class="card-inner">
+					<h2>Sunset</h2>
+					<p>Интернет-магазин с личным кабинетом</p>
+					<a class="btn" href="#">10 000 р.</a>
 				</div>
 				<img src="img/gallery-beach.jpg" width="240" height="240" alt="beach">
 			</article>
@@ -134,13 +144,10 @@
 					<div class="circle"></div>
 					<div class="circle"></div>
 				</div>
-				<img src="img/gallery-forte.jpg" width="240" height="240" alt="forte">
-			</article>	
-			<article class="card-product">
-				<div class="browser">
-					<div class="circle"></div>
-					<div class="circle"></div>
-					<div class="circle"></div>
+				<div class="card-inner">
+					<h2>Sunset</h2>
+					<p>Интернет-магазин с личным кабинетом</p>
+					<a class="btn" href="#">10 000 р.</a>
 				</div>
 				<img src="img/gallery-modern.jpg" width="240" height="240" alt="modern">
 			</article>
@@ -150,16 +157,40 @@
 					<div class="circle"></div>
 					<div class="circle"></div>
 				</div>
-				<img src="img/gallery-avenue.jpg" width="240" height="240" alt="avenue">
-			</article>
+				<div class="card-inner">
+					<h2>Sunset</h2>
+					<p>Интернет-магазин с личным кабинетом</p>
+					<a class="btn" href="#">10 000 р.</a>
+				</div>
+				<img src="img/gallery-forte.jpg" width="240" height="240" alt="forte">
+			</article>	
 			<article class="card-product">
 				<div class="browser">
 					<div class="circle"></div>
 					<div class="circle"></div>
 					<div class="circle"></div>
 				</div>
+				<div class="card-inner">
+					<h2>Sunset</h2>
+					<p>Интернет-магазин с личным кабинетом</p>
+					<a class="btn" href="#">10 000 р.</a>
+				</div>
 				<img src="img/gallery-dovetail.jpg" width="240" height="240" alt="dovetail">
+			</article>			
+			<article class="card-product">
+				<div class="browser">
+					<div class="circle"></div>
+					<div class="circle"></div>
+					<div class="circle"></div>
+				</div>
+				<div class="card-inner">
+					<h2>Sunset</h2>
+					<p>Интернет-магазин с личным кабинетом</p>
+					<a class="btn" href="#">10 000 р.</a>
+				</div>
+				<img src="img/gallery-avenue.jpg" width="240" height="240" alt="avenue">
 			</article>
+
 		</section>
 		<ul class="paginator">
 			<li>
@@ -183,11 +214,12 @@
 				<p>191186,Санкт-Петербург,<br>
 				ул. Б. Конюшенная, д. 19/8</p>
 				<p>тел. +7(812)275-75-75</p>
-				<a href=# class="btn">Напишите нам</a>
+				<a href=# class="btn btn-email">Напишите нам</a>
 			</address>
 			<div class="marker">
 			</div>
 		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15988.696626459436!2d30.337661103521608!3d59.93899372184917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1435455046179" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</section>
 	<footer>
 		<div class="container clearfix">
@@ -217,8 +249,9 @@
 			<textarea name="emailinner" placeholder="В свободной форме"></textarea>
 		</label>
 		<button type="submit" class="btn form-column-left">Отправить</button>
-		<a href="#" class=" btn btn-form form-column-right">Отмена</a>
+		<button type="reset" class=" btn btn-form form-column-right">Отмена</button>
 		</form>
 	</div>
+	<script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
