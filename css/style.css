@@ -64,34 +64,34 @@
 .icon-check-on:before { content: '\2611'; } /* '☑' */
 .icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
 body{
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
-	color:#283136;
 	font-weight: 500;
-	font-family: "Roboto", Arial, sans-serif;
+	color:#283136;
 }
 h1{
 	font-size: 36px;
 	line-height: 36px;
-	color:#000000;
 	font-weight: 500;
+	color:#000000;
 	font-family: "Roboto";
 	margin: 0;
 }
 h2{
+	font-family: "Roboto", Arial, sans-serif;
 	font-size:18px;
 	line-height: 30px;
-	color:#000;
 	font-weight: 500;
-	font-family: "Roboto", Arial, sans-serif;
+	color:#000;
 	text-transform: uppercase;
 }
 h3{
+	font-family: "Roboto", Arial, sans-serif;
 	font-size:16px;
 	line-height: 22px;
-	color:#283136;
 	font-weight: 500;
-	font-family: "Roboto", Arial, sans-serif;
+	color:#283136;
 	text-transform: uppercase;
 }
 .partners img{
@@ -414,8 +414,13 @@ address{
 	background-color:#fff;
 	font-style: normal;
 }
-address h3{
+.address-title{
 	margin-top:29px;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size:16px;
+	line-height: 22px;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 address .btn{
 	position: absolute;
@@ -646,7 +651,7 @@ address .btn{
 	color: #000;
 }
 .catalog-column-left label:hover:before{
-	color: #b5b5b5 !important;
+	color: #b5b5b5;
 }
 .catalog-column-left input:disabled+label{
 	opacity: 0.4;
@@ -657,10 +662,15 @@ address .btn{
 	display: block;
 	left:-35px;
 	vertical-align: middle;
-	color: #c1c1c1;
 	font-family: symbols-nerds;
 	font-size: 30px;
 	margin-right: 10px;
+}
+.catalog-column-left label:before{
+	color: #c1c1c1;
+}
+.catalog-column-left label:hover:before{
+	color: #b5b5b5;
 }
 .catalog-column-left input[type="radio"]:checked+label:before{
 	content: '\25cf';
@@ -678,7 +688,6 @@ address .btn{
 	display: block;
 	left:-35px;
 	vertical-align: middle;
-	color: #c1c1c1;
 	font-family: symbols-nerds;
 	font-size: 25px;
 	margin-right: 10px;
@@ -698,8 +707,8 @@ address .btn{
 	text-decoration: none;
 }
 .catalog-column-left .btn-form{
-	width: 154px;
-	margin-top: 62px;
+	width: 88px;
+	margin-top: 58px;
 }
 .btn-form{
 	padding:10px 33px;
